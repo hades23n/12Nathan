@@ -1,0 +1,155 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monaliza Clutching - Ethiopian Shopping Website</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #f2f2f2;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .dark-mode .product {
+      background-color: #444;
+      color: #f2f2f2;
+    }
+
+    .lighting-effect {
+      box-shadow: 0 0 20px 5px #ffeb3b;
+    }
+
+    .dark-mode .lighting-effect {
+      box-shadow: 0 0 20px 5px #ffeb3b, 0 0 10px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .product-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .product-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-section .product {
+      width: 48%;
+      margin-right: 4%;
+      float: left;
+    }
+
+    .product-section .product:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .search-bar {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .search-bar input[type="text"] {
+      width: 60%;
+      padding: 5px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+
+    .search-bar button {
+      width: 20%;
+      padding: 5px;
+      font-size: 16px;
+      border: none;
+      background-color: #4285F4;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #3367D6;
+    }
+
+    .price-range-bar {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .price-range-bar input[type="range"] {
+      width: 80%;
+      margin-top: 5px;
+    }
+
+    .price-range-bar input[type="number"] {
+      width: 15%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .price-range-bar button {
+      width: 15%;
+      padding: 5px;
+      font-size: 16px;
+      border: none;
+      background-color: #4285F4;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .price-range-bar button:hover {
+      background-color: #3367D6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Monaliza Clutching - Ethiopian Shopping Website!</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Men's Clothing</a></li>
+      <li><a href="#">Women's Clothing</a></li>
+      <li><a href="#">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for products">
+    <button>Search</button>
+  </div>
+
+  <div class="price-range-bar">
+    <input type="range" min="0" max="100" value
